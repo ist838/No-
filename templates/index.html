@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>북딱 서바이벌</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#080b09;color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ padding:20px 7%;
+ border-bottom:1px solid #303a31;
+ display:flex;justify-content:space-between;
+ align-items:center;
+}
+.logo{font-weight:900;letter-spacing:3px}
+.tag{color:#a8b5a8;font-size:12px}
+main{
+ min-height:85vh;display:grid;place-items:center;
+ padding:20px;
+ background:
+ linear-gradient(#000b,#000e),
+ url("https://images.unsplash.com/photo-1511497584788-876760111969?w=1600")
+ center/cover;
+}
+.panel{
+ width:min(700px,100%);
+ padding:55px 20px;text-align:center;
+ background:#080d0bea;
+ border:1px solid #526052;border-radius:15px;
+}
+h1{font-size:clamp(45px,10vw,85px);margin:20px 0}
+p{color:#bbc4ba;line-height:1.8}
+.start{
+ display:inline-block;padding:17px 42px;
+ background:#962c2c;color:white;
+ border-radius:8px;text-decoration:none;
+ font-size:20px;font-weight:bold;margin:20px;
+}
+.start:hover{background:#bd3838}
+.features{
+ display:flex;justify-content:center;
+ flex-wrap:wrap;gap:10px;margin-top:25px
+}
+.features span{
+ border:1px solid #435044;
+ border-radius:20px;padding:8px 12px;
+ font-size:12px;color:#c6d0c5
+}
+footer{text-align:center;padding:25px;color:#788078}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">BUKDDAK SURVIVAL</div>
+ <div class="tag">3D HORROR GAME</div>
+</header>
+
+<main>
+ <section class="panel">
+  <p>YOU ARE NOT ALONE</p>
+  <h1>북딱<br>서바이벌</h1>
+  <p>
+   안개 낀 숲에서 살아남아라.<br>
+   발소리가 들리면 조심해라.<br>
+   누군가 당신을 쫓아오고 있다.
+  </p>
+  <a class="start" href="/game">게임 시작 ▶</a>
+  <div class="features">
+   <span>3D FIRST PERSON</span>
+   <span>HORROR</span>
+   <span>PC & MOBILE</span>
+   <span>SURVIVAL</span>
+  </div>
+ </section>
+</main>
+
+<footer>BUKDDAK SURVIVAL · 2026</footer>
+</body>
+</html>
